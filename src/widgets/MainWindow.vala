@@ -6,8 +6,11 @@ public class Vayt.Widgets.MainWindow : Gtk.ApplicationWindow{
     }
 
     construct{
-        title = "Vayt";
+        // title = "Vayt";
         set_default_size(600, 500);
+
+        var hbar = new Vayt.Widgets.HeaderBar();
+        set_titlebar(hbar);
 
         show_all();
     }
